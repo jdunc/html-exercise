@@ -1,0 +1,63 @@
+
+/*
+	STYLE.CSS:
+	One stylesheet to rule them all.
+
+	selector { property:value }
+
+*/
+
+
+
+body {
+  background-color: #BCC8CC;
+}
+
+.pageContainer {
+  width: 940px;
+  margin: 20px auto 0 auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.imageContainer {
+  float: left;
+  width: 620px;
+}
+
+.textContainer {
+  float: left;
+  width: 300px;
+  margin-left: 20px;
+  margin-top: 100px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 39px;
+  color: #d3ac8b;
+  text-align: center;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #75605b;
+  text-align: center;
+}
+
+
+/* ---- Advanced ---- */
+/* This tag is a bit advanced for this lesson,
+   but is needed to wrap the pageContainer
+   around any sized content that is floated within it. */
+
+.pageContainer:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
